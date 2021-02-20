@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 body {
-    background-color: hsl(185, 75%, 39%);
+    background: url(./images/bg-pattern-top.svg) -60% 50% no-repeat, url(./images/bg-pattern-bottom.svg) 140% -45% no-repeat, hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
 }
