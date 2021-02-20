@@ -1,0 +1,18 @@
+.profile-card {
+	max-width: 350px;
+}
+
+.profile-details {
+	background: url('./images/bg-pattern-card.svg') no-repeat;
+	background-size: cover;
+	border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+
+.profile-card img {
+	border: 5px solid #FFFFFF;
+	border-radius: 50%;
+    margin-top: 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
