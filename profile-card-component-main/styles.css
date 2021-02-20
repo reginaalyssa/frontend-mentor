@@ -1,6 +1,4 @@
-.profile-card {
-	max-width: 350px;
-}
+.profile-card { max-width: 350px; }
 
 .profile-details {
 	background: url('./images/bg-pattern-card.svg') no-repeat;
@@ -16,3 +14,6 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
