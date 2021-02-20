@@ -28,6 +28,12 @@ body {
     margin-right: auto;
 }
 
+.profile-name,
+.stats-value {
+    font-weight: bold;
+    color: hsl(229, 23%, 23%);
+}
+
 .profile-stats {
     background-color: #FFFFFF;
     border-radius: 0 0 15px 15px;
@@ -36,12 +42,21 @@ body {
     justify-content: space-between;
     list-style-type: none;
     margin: 0;
-    padding: 30px;
+    padding: 30px 40px;
+    text-align: center;
 }
 
-.profile-statistics li {
+.profile-stat {
     display: inline-block;
     text-align: center;
+    width: 70px;
+}
+
+.stats-label {
+    color: hsl(0, 0%, 59%);
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-top: 7px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
