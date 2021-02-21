@@ -2,9 +2,9 @@
 
 body {
     background: url(./images/bg-pattern-top.svg) bottom 45vh right 50vw no-repeat, url(./images/bg-pattern-bottom.svg) top 45vh left 50vw no-repeat, hsl(185, 75%, 39%);
-    min-height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
+    min-height: 100vh;
 }
 
 .profile-card-container {
