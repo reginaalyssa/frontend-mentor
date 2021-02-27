@@ -7,6 +7,35 @@ body {
     min-height: 100vh;
 }
 
+.faq-accordion-card-container {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+}
+
+.faq-accordion-card {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 30px;
+    -webkit-box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center;
