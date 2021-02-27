@@ -5,6 +5,11 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
     min-height: 100vh;
+    color: hsl(238, 29%, 16%);
+}
+
+h1 {
+    font-size: 32px;
 }
 
 .faq-accordion-card-container {
