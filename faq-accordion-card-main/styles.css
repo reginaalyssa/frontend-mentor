@@ -51,7 +51,7 @@ h1 {
     color: hsl(237, 12%, 33%);
     /*color: hsl(240, 6%, 50%);*/
     font-size: 14px;
-    padding: 15px 0;
+    padding: 20px 0;
     border-bottom: 1px solid hsl(240, 5%, 91%);
     display: flex;
     justify-content: space-between;
