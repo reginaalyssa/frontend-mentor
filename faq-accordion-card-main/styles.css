@@ -10,6 +10,15 @@ body {
 
 h1 {
     font-size: 32px;
+    margin: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
 }
 
 .faq-accordion-card-container {
@@ -27,18 +36,49 @@ h1 {
 .faq-accordion-card {
     background-color: #FFFFFF;
     border-radius: 25px;
-    padding: 30px;
+    padding: 80px;
     -webkit-box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
 }
 
-.row {
-  display: flex;
+.accordions {
+    margin-top: 35px;
 }
 
-.column {
-  flex: 50%;
+.accordion-header {
+    /*color: hsl(238, 29%, 16%);*/
+    color: hsl(237, 12%, 33%);
+    /*color: hsl(240, 6%, 50%);*/
+    font-size: 14px;
+    padding: 15px 0;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-header .toggle {
+    border: none;
+    outline: none;
+    height: 15px;
+    width: 7px;
+    background: none;
+    line-height: 0;
+    margin: 0 10px;
+}
+
+.accordion-header .toggle::after {
+    background : url(./images/icon-arrow-down.svg) no-repeat;
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    height: 7px;
+    width: 10px;
+
+}
+
+.accordion-content {
+    display: none;
 }
 
 .attribution { 
