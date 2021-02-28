@@ -42,7 +42,8 @@ h1 {
 }
 
 .faq-visuals-container {
-    background: url(./images/bg-pattern-desktop.svg) bottom 32% right -14% no-repeat;
+    background: url(./images/bg-pattern-desktop.svg) top -300px left -580px no-repeat;
+    /*background: url(./images/bg-pattern-desktop.svg) bottom 32% right -14% no-repeat;*/
     position: relative;
 }
 
