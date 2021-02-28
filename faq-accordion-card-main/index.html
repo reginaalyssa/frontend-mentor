@@ -87,9 +87,9 @@
   <script>
     document.addEventListener("click", function(e) {
       const element = e.target;
-      const accordion = element.parentNode;
 
-      if (accordion) {
+      if (element.parentNode.classList.contains("accordion")) {
+        const accordion = element.parentNode;
         const classList = accordion.classList;
         if (classList.contains("active")) {
           accordion.classList.remove("active");
