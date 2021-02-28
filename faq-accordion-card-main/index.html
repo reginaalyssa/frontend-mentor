@@ -84,5 +84,20 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </div>
+  <script>
+    document.addEventListener('click', function(e) {
+      const element = e.target;
+      const accordion = element.parentNode;
+
+      if (accordion) {
+        const classList = accordion.classList;
+        if (classList.contains("active")) {
+          accordion.classList.remove("active");
+        } else {
+          accordion.classList.add("active");
+        }
+      }
+    });
+  </script>
 </body>
 </html>
