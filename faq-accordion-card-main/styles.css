@@ -14,15 +14,15 @@ h1 {
 }
 
 .row {
-  display: flex;
+    display: flex;
 }
 
 .column {
-  flex: 50%;
+    flex: 1;
 }
 
 .faq-accordion-card-container {
-    width: 850px;
+    width: 920px;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
@@ -36,14 +36,37 @@ h1 {
 .faq-accordion-card {
     background-color: #FFFFFF;
     border-radius: 25px;
-    padding: 80px;
     -webkit-box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
 }
 
+.faq-visuals-container {
+    background: url(./images/bg-pattern-desktop.svg) bottom 33% right -15% no-repeat;
+    position: relative;
+}
+
+.faq-visuals-main-container {
+    overflow: hidden;
+}
+
+.faq-visuals-main {
+    margin-left: -85px;
+    margin-top: calc((100% - 360px) / 2);
+}
+
+.faq-visuals-box {
+    position: absolute;
+    left: -93px;
+    top: 185px;
+}
+
+.faq-content {
+    padding: 70px 90px 70px 15px;
+}
+
 .accordions {
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
 .accordion-header {
