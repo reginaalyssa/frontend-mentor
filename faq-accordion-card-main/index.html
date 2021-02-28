@@ -87,22 +87,29 @@
   <script>
     document.addEventListener("click", function(e) {
       const element = e.target;
+      let accordion;
 
-      if (element.parentNode.classList.contains("accordion")) {
-        const accordion = element.parentNode;
-        const classList = accordion.classList;
-        if (classList.contains("active")) {
-          accordion.classList.remove("active");
-        } else {
-          accordion.classList.add("active");
-        }
+      if (element.closest(".accordion")) {
+        accordion = element.closest(".accordion");
+      }
+      else if (element.classList.contains("accordion")) {
+        accordion = element;
+      } else {
+        return;
+      }
 
-        const content = accordion.getElementsByClassName("accordion-content").item(0);
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
+      const classList = accordion.classList;
+      if (classList.contains("active")) {
+        accordion.classList.remove("active");
+      } else {
+        accordion.classList.add("active");
+      }
+
+      const content = accordion.getElementsByClassName("accordion-content").item(0);
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
       }
     });
   </script>
