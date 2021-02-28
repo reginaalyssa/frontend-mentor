@@ -82,9 +82,12 @@ h1 {
     justify-content: space-between;
 }
 
-.accordion-header:hover {
-    color: hsl(14, 88%, 65%);
+.accordion:hover {
     cursor: pointer;
+}
+
+.accordion:hover .accordion-header {
+    color: hsl(14, 88%, 65%);
 }
 
 .accordion-header .toggle {
@@ -106,12 +109,15 @@ h1 {
 }
 
 .accordion-content {
-    color: hsl(240, 6%, 50%);
-    margin-top: 10px;
-    line-height: 1.5;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.25s ease-in-out;
+}
+
+.accordion-content p {
+    margin: 10px 0 0 0;
+    color: hsl(240, 6%, 50%);
+    line-height: 1.5;
 }
 
 
