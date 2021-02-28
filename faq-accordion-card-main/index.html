@@ -85,6 +85,15 @@
     </div>
   </div>
   <script>
+    function closeAccordion(accordion) {
+      const content = accordion.getElementsByClassName("accordion-content").item(0);
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    }
+
     document.addEventListener("click", function(e) {
       const element = e.target;
       let accordion;
@@ -102,15 +111,18 @@
       if (classList.contains("active")) {
         accordion.classList.remove("active");
       } else {
+
+        const activeAccordions = document.querySelectorAll(".accordion.active");
+        const accordionCount = activeAccordions.length;
+
+        for (let i = 0; i < accordionCount; i++) {
+          activeAccordions[i].classList.remove("active");
+          closeAccordion(activeAccordions[i]);
+        }
         accordion.classList.add("active");
       }
 
-      const content = accordion.getElementsByClassName("accordion-content").item(0);
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
+      closeAccordion(accordion);
     });
   </script>
 </body>
