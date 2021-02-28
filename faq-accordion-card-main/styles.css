@@ -42,7 +42,7 @@ h1 {
 }
 
 .faq-visuals-container {
-    background: url(./images/bg-pattern-desktop.svg) bottom 33% right -15% no-repeat;
+    background: url(./images/bg-pattern-desktop.svg) bottom 32% right -14% no-repeat;
     position: relative;
 }
 
@@ -52,30 +52,44 @@ h1 {
 
 .faq-visuals-main {
     margin-left: -85px;
-    margin-top: calc((100% - 360px) / 2);
+    margin-top: 70px;
 }
 
 .faq-visuals-box {
     position: absolute;
     left: -93px;
-    top: 185px;
+    top: 205px;
 }
 
 .faq-content {
-    padding: 70px 90px 70px 15px;
+    padding: 75px 95px 85px 15px;
 }
 
 .accordions {
-    margin-top: 20px;
+    margin-top: 25px;
+}
+
+.accordion {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding: 17px 0;
+}
+
+.accordion.active .accordion-header {
+    transition: all 0.25s ease-in-out;
+    font-weight: bold;
+}
+
+.accordion.active .accordion-header .toggle:after {
+    transform: rotate(180deg);
+}
+
+.accordion.active .accordion-content {
+    display: block;
 }
 
 .accordion-header {
-    /*color: hsl(238, 29%, 16%);*/
     color: hsl(237, 12%, 33%);
-    /*color: hsl(240, 6%, 50%);*/
     font-size: 14px;
-    padding: 20px 0;
-    border-bottom: 1px solid hsl(240, 5%, 91%);
     display: flex;
     justify-content: space-between;
 }
@@ -88,11 +102,10 @@ h1 {
 .accordion-header .toggle {
     border: none;
     outline: none;
-    height: 15px;
-    width: 7px;
     background: none;
     line-height: 0;
     margin: 0 10px;
+    transition: all 0.25s ease-in-out;
 }
 
 .accordion-header .toggle::after {
@@ -107,6 +120,9 @@ h1 {
 
 .accordion-content {
     display: none;
+    color: hsl(240, 6%, 50%);
+    margin-top: 10px;
+    line-height: 1.5;
 }
 
 .attribution { 
