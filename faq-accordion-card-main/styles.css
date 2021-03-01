@@ -158,6 +158,61 @@ h1 {
 
 
 @media screen and (max-width: 767px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .faq-accordion-card-container {
+        max-width: 85vw;
+        margin-top: 150px;
+        margin-bottom: 50px;
+        top: initial;
+        left: initial;
+        transform: none;
+        -ms-transform: none;
+        -webkit-transform: none;
+        position: initial;
+    }
+
+    .faq-visuals-container, .faq-visuals-main-container {
+        overflow: visible;
+    }
+
+    .faq-visuals-container {
+        background: url(./images/bg-pattern-desktop.svg) top -135px left 50% no-repeat;
+        background-size: 240px;
+        min-height: 135px;
+    }
+
+    .faq-visuals-main {
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: -108px;
+    }
+
+    .faq-visuals-box {
+        height: 92px;
+        top: -43px;
+        left: calc(50% - 123px);
+    }
+
+    .faq-content {
+        padding: 0 20px 60px 20px;
+    }
+
+    .faq-content h1 {
+        text-align: center;
+    }
+
+    .accordion-header {
+        font-size: 13px;
+    }
+
+    .accordion-header .toggle {
+        margin: 0;
+    }
 }
 
 .attribution { 
