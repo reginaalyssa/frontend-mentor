@@ -23,6 +23,7 @@ h1 {
 }
 
 .faq-accordion-card-container {
+    max-width: 90vw;
     width: 920px;
     margin-left: auto;
     margin-right: auto;
@@ -131,10 +132,6 @@ h1 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .faq-accordion-card-container {
-        max-width: 90vw;
-    }
-
     .faq-content {
         padding-left: 20px;
         padding-right: 50px;
