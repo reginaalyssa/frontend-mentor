@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+  <div class="faq-accordion-card-container">
+    <div class="faq-accordion-card">
+      <div class="row">
+        <div class="column faq-visuals-container">
+          <div class="faq-visuals-main-container">
+            <img class="faq-visuals-main" src="./images/illustration-woman-online-desktop.svg" alt="illustration of woman in front of computer monitor" />
+            <img class="faq-visuals-main-mobile" src="./images/illustration-woman-online-mobile.svg" alt="illustration of woman in front of computer monitor" />
+          </div>
+          <img class="faq-visuals-box" src="./images/illustration-box-desktop.svg" alt="illustration of box" />
+        </div>
+        <div class="column">
+          <div class="faq-content">
+            <h1>FAQ</h1>
+            <div class="accordions">
+              <div class="accordion">
+                <div class="accordion-header">
+                  How many team members can I invite?
+                  <button class="toggle" />
+                </div>
+                <div class="accordion-content">
+                  <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+                  team members for the Premium plan.</p>
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-header">
+                  What is the maximum file upload size?
+                  <button class="toggle" />
+                </div>
+                <div class="accordion-content">
+                  <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-header">
+                  How do I reset my password?
+                  <button class="toggle" />
+                </div>
+                <div class="accordion-content">
+                  <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+                  A reset link will be emailed to you.</p>
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-header">
+                  Can I cancel my subscription?
+                  <button class="toggle" />
+                </div>
+                <div class="accordion-content">
+                  <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-header">
+                  Do you provide additional support?
+                  <button class="toggle" />
+                </div>
+                <div class="accordion-content">
+                  <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="http://github.com/reginaalyssa">Regina Alyssa</a>.
+    </div>
+  </div>
+  <script>
+    function closeAccordion(accordion) {
+      const content = accordion.getElementsByClassName("accordion-content").item(0);
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    }
+
+    document.addEventListener("click", function(e) {
+      const element = e.target;
+      let accordion;
+
+      if (element.closest(".accordion")) {
+        accordion = element.closest(".accordion");
+      }
+      else if (element.classList.contains("accordion")) {
+        accordion = element;
+      } else {
+        return;
+      }
+
+      const classList = accordion.classList;
+      if (classList.contains("active")) {
+        accordion.classList.remove("active");
+      } else {
+
+        const activeAccordions = document.querySelectorAll(".accordion.active");
+        const accordionCount = activeAccordions.length;
+
+        for (let i = 0; i < accordionCount; i++) {
+          activeAccordions[i].classList.remove("active");
+          closeAccordion(activeAccordions[i]);
+        }
+        accordion.classList.add("active");
+      }
+
+      closeAccordion(accordion);
+    });
+  </script>
+</body>
+</html>
