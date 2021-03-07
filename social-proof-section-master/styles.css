@@ -47,6 +47,27 @@ h2 {
     margin-right: 200px;
 }
 
+.rating-container { 
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    width: 405px;
+    display: flex;
+}
+
+.stars, .rating {
+    display: flex;
+    margin-right: 30px;
+}
+
+.star {
+    display: inline-block;
+    margin-right: 5px;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
