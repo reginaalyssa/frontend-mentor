@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
 body {
+    background: url(./images/bg-pattern-top-desktop.svg) top left no-repeat, url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat, hsl(0, 0%, 100%);
     font-family: 'Spartan', sans-serif;
     font-size: 14px;
     margin: 0;
@@ -135,6 +136,7 @@ h2 {
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin: 20px 0;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
