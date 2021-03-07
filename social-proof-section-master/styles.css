@@ -81,16 +81,16 @@ h2 {
 
 .reviews-container {
     justify-content: space-between;
-    margin-top: 75px;
+    margin-top: 70px;
 }
 
 .review-container {
     background-color: hsl(300, 43%, 22%);
     border-radius: 10px;
     color: hsl(300, 24%, 96%);
-    font-size: 14px;
-    padding: 40px 35px;
-    width: 280px;
+    font-size: 13px;
+    padding: 40px 32px;
+    width: 285px;
 }
 
 .profile-container {
@@ -102,7 +102,7 @@ h2 {
     border-radius: 50%;
     display: block;
     height: 40px;
-    margin-right: 25px;
+    margin-right: 23px;
     object-fit: contain;
 }
 
@@ -112,7 +112,8 @@ h2 {
 
 .profile-name {
     font-weight: 700;
-    margin: 5px 0;
+    margin-top: 5px;
+    margin-bottom: 6px;
 }
 
 .verified-buyer {
@@ -121,6 +122,7 @@ h2 {
 
 .review {
     font-size: 13px;
+    letter-spacing: -.2px;
     line-height: 1.75;
     margin: 30px 0 0 0;
 }
