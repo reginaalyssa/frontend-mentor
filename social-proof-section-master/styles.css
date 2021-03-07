@@ -1,0 +1,15 @@
+@import url('https://fonts.google.com/specimen/Spartan:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
