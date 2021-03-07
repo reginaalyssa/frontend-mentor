@@ -6,6 +6,14 @@ body {
     min-height: 100vh;
 }
 
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
