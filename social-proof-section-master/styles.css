@@ -20,6 +20,7 @@ h2 {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
+    margin-bottom: 0;
 }
 
 .row {
@@ -61,11 +62,58 @@ h2 {
 .stars, .rating {
     display: flex;
     margin-right: 30px;
+    font-size: 14px;
 }
 
 .star {
     display: inline-block;
     margin-right: 5px;
+}
+
+.reviews-container {
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.review-container {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: hsl(300, 24%, 96%);
+    font-size: 14px;
+    padding: 40px 35px;
+    width: 290px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image-container img {
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    margin-right: 25px;
+    object-fit: contain;
+}
+
+.profile-details-container {
+    flex: 1 1 auto;
+}
+
+.profile-name {
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.verified-buyer {
+    color: hsl(333, 80%, 67%);
+}
+
+.review {
+    font-size: 13px;
+    line-height: 1.75;
+    margin: 30px 0 0 0;
 }
 
 .attribution {
