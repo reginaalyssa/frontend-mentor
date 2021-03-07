@@ -2,13 +2,24 @@
 
 body {
     font-family: 'Spartan', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     margin: 0;
     min-height: 100vh;
 }
 
 h1 {
     color: hsl(300, 43%, 22%);
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+}
+
+h2 {
+    color: hsl(303, 10%, 53%);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .row {
@@ -17,6 +28,23 @@ h1 {
 
 .column {
     flex: 1;
+}
+
+.social-proof-container {
+    max-width: 90vw;
+    width: 1105px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+}
+
+.header-container {
+    margin-right: 200px;
 }
 
 .attribution {
