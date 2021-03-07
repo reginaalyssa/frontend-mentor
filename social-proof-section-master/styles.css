@@ -91,7 +91,12 @@ h2 {
     font-size: 13px;
     padding: 40px 32px;
     width: 285px;
+    height: max-content;
 }
+
+.review-container:nth-child(1) { margin-top: 0px; }
+.review-container:nth-child(2) { margin-top: 16px; }
+.review-container:nth-child(3) { margin-top: 32px; }
 
 .profile-container {
     display: flex;
