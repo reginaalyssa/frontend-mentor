@@ -38,6 +38,7 @@ h2 {
 .social-proof-container {
     max-width: 90vw;
     width: 77vw;
+    min-width: min-content;
     margin-top: 135px;
     margin-left: auto;
     margin-right: auto;
@@ -45,6 +46,12 @@ h2 {
 
 .header-container {
     margin-right: 9vw;
+}
+
+@media screen and (max-width: 1163px) {
+    .header-container {
+        margin-right: 20px;
+    }
 }
 
 .rating-container:nth-child(1) { margin-right: 95px; }
@@ -59,19 +66,28 @@ h2 {
     letter-spacing: -.45px;
     padding: 20px 30px;
     margin-top: 15px;
-    width: 385px;
+    max-width: 385px;
+    width: 27vw;
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .stars, .rating {
     display: flex;
-    margin-right: 25px;
     font-size: 14px;
+    height: min-content;
+}
+
+.stars {
+    margin-right: 25px;
 }
 
 .star {
     display: inline-block;
+}
+
+.star:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -86,7 +102,7 @@ h2 {
     color: hsl(300, 24%, 96%);
     font-size: 13px;
     padding: 40px 32px;
-    height: max-content;
+    height: min-content;
 }
 
 .review-container:not(:last-child) {
@@ -129,6 +145,90 @@ h2 {
     letter-spacing: -.2px;
     line-height: 1.75;
     margin: 30px 0 0 0;
+}
+
+@media screen and (max-width: 1097px) {
+    .review-container {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .social-proof-container {
+        width: 87.5vw;
+        max-width: 87.5vw;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+        font-size: 32px;
+    }
+
+    h2 {
+        letter-spacing: -.35px;
+        margin-top: 25px;
+    }
+
+    .header-container {
+        text-align: center;
+        margin-right: auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .rating-container:nth-child(1) {
+        margin-top: 40px;
+    }
+
+    .rating-container {
+        max-width: unset;
+        width: unset;
+        margin-right: auto !important;
+    }
+
+    .reviews-container {
+        margin-top: 50px;
+    }
+
+    .review-container {
+        margin-right: auto !important;
+    }
+
+    .review-container:not(:first-child) {
+        margin-top: 16px !important;
+    }
+
+    .review {
+        letter-spacing: -.15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        background: url(./images/bg-pattern-top-mobile.svg) top left no-repeat, url(./images/bg-pattern-bottom-mobile.svg) bottom right no-repeat, hsl(0, 0%, 100%);
+    }
+
+    h1 {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social-proof-container {
+        margin-top: 85px;
+    }
+
+    .rating-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .stars {
+        margin-right: unset;
+        margin-bottom: 15px;
+    }
 }
 
 .attribution {
