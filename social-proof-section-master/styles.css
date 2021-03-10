@@ -5,7 +5,7 @@ body {
     font-family: 'Spartan', sans-serif;
     font-size: 14px;
     margin: 0;
-    min-height: 100vh;
+    min-height: calc(100vh - 135px);
 }
 
 h1 {
@@ -157,6 +157,7 @@ h2 {
     .social-proof-container {
         width: 87.5vw;
         max-width: 87.5vw;
+        margin-bottom: 100px;
     }
 
     h1 {
@@ -208,6 +209,7 @@ h2 {
 @media screen and (max-width: 640px) {
     body {
         background: url(./images/bg-pattern-top-mobile.svg) top left no-repeat, url(./images/bg-pattern-bottom-mobile.svg) bottom right no-repeat, hsl(0, 0%, 100%);
+        min-height: calc(100vh - 85px);
     }
 
     h1 {
@@ -218,6 +220,7 @@ h2 {
 
     .social-proof-container {
         margin-top: 85px;
+        margin-bottom: 85px;
     }
 
     .rating-container {
