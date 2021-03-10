@@ -37,19 +37,14 @@ h2 {
 
 .social-proof-container {
     max-width: 90vw;
-    width: 1110px;
+    width: 77vw;
+    margin-top: 135px;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); /* IE 9 */
-    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
 }
 
 .header-container {
-    margin-right: 100px;
+    margin-right: 9vw;
 }
 
 .rating-container:nth-child(1) { margin-right: 95px; }
@@ -91,8 +86,11 @@ h2 {
     color: hsl(300, 24%, 96%);
     font-size: 13px;
     padding: 40px 32px;
-    width: 285px;
     height: max-content;
+}
+
+.review-container:not(:last-child) {
+    margin-right: 30px;
 }
 
 .review-container:nth-child(1) { margin-top: 0px; }
