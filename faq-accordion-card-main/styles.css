@@ -26,9 +26,9 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%); /* IE 9 */
     -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+    transform: translate(-50%, -50%);
     margin-right: auto;
     margin-left: auto;
     width: 920px;
@@ -36,8 +36,8 @@ h1 {
 }
 
 .faq-accordion-card {
-    -webkit-box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
     border-radius: 25px;
     background-color: #FFFFFF;
@@ -169,9 +169,9 @@ h1 {
         position: initial;
         top: initial;
         left: initial;
-        transform: none;
         -ms-transform: none;
         -webkit-transform: none;
+        transform: none;
         margin-top: 150px;
         margin-bottom: 50px;
         max-width: 85vw;
