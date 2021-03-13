@@ -193,8 +193,12 @@ h1 {
 
     .faq-visuals-main-mobile {
         display: block;
+        -ms-transform: translate(-15px, 0); /* IE 9 */
+        -webkit-transform: translate(-15px, 0); /* Chrome, Safari, Opera */
+        transform: translate(-15px, 0);
         margin-top: -108px;
-        margin-left: 15px;
+        margin-right:auto;
+        margin-left: auto;
     }
 
     .faq-visuals-box {
