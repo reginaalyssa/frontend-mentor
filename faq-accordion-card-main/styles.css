@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 body {
-    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 12px;
-    min-height: 100vh;
-    color: hsl(238, 29%, 16%);
     margin: 0;
+    min-height: 100vh;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(238, 29%, 16%);
 }
 
 h1 {
-    font-size: 32px;
     margin: 0;
+    font-size: 32px;
 }
 
 .row {
@@ -23,29 +23,29 @@ h1 {
 }
 
 .faq-accordion-card-container {
-    max-width: 90vw;
-    width: 920px;
-    margin-left: auto;
-    margin-right: auto;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%); /* IE 9 */
     -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+    transform: translate(-50%, -50%);
+    margin-right: auto;
+    margin-left: auto;
+    width: 920px;
+    max-width: 90vw;
 }
 
 .faq-accordion-card {
-    background-color: #FFFFFF;
-    border-radius: 25px;
-    -webkit-box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 11px 60px -15px rgba(0, 0, 0, 0.75);
+    border-radius: 25px;
+    background-color: #FFFFFF;
 }
 
 .faq-visuals-container {
-    background: url(./images/bg-pattern-desktop.svg) top -300px left calc(100% - 68px) no-repeat;
     position: relative;
+    background: url(./images/bg-pattern-desktop.svg) top -300px left calc(100% - 68px) no-repeat;
 }
 
 .faq-visuals-main-container {
@@ -53,8 +53,8 @@ h1 {
 }
 
 .faq-visuals-main {
-    margin-left: calc(100% - 541px);
     margin-top: 70px;
+    margin-left: calc(100% - 541px);
 }
 
 .faq-visuals-main-mobile {
@@ -63,8 +63,8 @@ h1 {
 
 .faq-visuals-box {
     position: absolute;
-    left: calc(100% - 553px);
     top: 205px;
+    left: calc(100% - 553px);
 }
 
 .faq-content {
@@ -82,10 +82,10 @@ h1 {
 }
 
 .accordion-header {
-    color: hsl(237, 12%, 33%);
-    font-size: 14px;
     display: flex;
     justify-content: space-between;
+    font-size: 14px;
+    color: hsl(237, 12%, 33%);
 }
 
 .accordion:hover, .accordion:hover .toggle {
@@ -97,33 +97,33 @@ h1 {
 }
 
 .accordion-header .toggle {
+    margin: 0 10px;
     border: none;
     outline: none;
     background: none;
     line-height: 0;
-    margin: 0 10px;
 }
 
 .accordion-header .toggle::after {
-    background : url(./images/icon-arrow-down.svg) no-repeat;
     content: '';
     vertical-align: middle;
     display: inline-block;
-    height: 7px;
-    width: 10px;
     transition: all 0.25s ease-in-out;
+    width: 10px;
+    height: 7px;
+    background : url(./images/icon-arrow-down.svg) no-repeat;
 }
 
 .accordion-content {
-    max-height: 0;
     overflow: hidden;
     transition: max-height 0.25s ease-in-out;
+    max-height: 0;
 }
 
 .accordion-content p {
     margin: 10px 0 0 0;
-    color: hsl(240, 6%, 50%);
     line-height: 1.5;
+    color: hsl(240, 6%, 50%);
 }
 
 
@@ -137,8 +137,8 @@ h1 {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .faq-content {
-        padding-left: 20px;
         padding-right: 50px;
+        padding-left: 20px;
     }
 
     .faq-visuals-container {
@@ -166,15 +166,15 @@ h1 {
     }
 
     .faq-accordion-card-container {
-        max-width: 85vw;
-        margin-top: 150px;
-        margin-bottom: 50px;
+        position: initial;
         top: initial;
         left: initial;
-        transform: none;
         -ms-transform: none;
         -webkit-transform: none;
-        position: initial;
+        transform: none;
+        margin-top: 150px;
+        margin-bottom: 50px;
+        max-width: 85vw;
     }
 
     .faq-visuals-container, .faq-visuals-main-container {
@@ -182,9 +182,9 @@ h1 {
     }
 
     .faq-visuals-container {
+        min-height: 135px;
         background: url(./images/bg-pattern-mobile.svg) top left 50% no-repeat;
         background-size: 240px;
-        min-height: 135px;
     }
 
     .faq-visuals-main {
@@ -192,9 +192,13 @@ h1 {
     }
 
     .faq-visuals-main-mobile {
-        margin-left: 15px;
         display: block;
+        -ms-transform: translate(-15px, 0); /* IE 9 */
+        -webkit-transform: translate(-15px, 0); /* Chrome, Safari, Opera */
+        transform: translate(-15px, 0);
         margin-top: -108px;
+        margin-right:auto;
+        margin-left: auto;
     }
 
     .faq-visuals-box {
@@ -219,9 +223,11 @@ h1 {
 }
 
 .attribution { 
+    margin: 20px 0;
     font-size: 11px; 
     text-align: center;
-    margin: 20px 0;
 }
 
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
