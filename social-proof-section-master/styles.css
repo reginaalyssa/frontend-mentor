@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+body {
+    background: url(./images/bg-pattern-top-desktop.svg) top left no-repeat, url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat, hsl(0, 0%, 100%);
+    font-family: 'Spartan', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    min-height: calc(100vh - 135px);
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1.55px;
+    line-height: 1;
+    margin: 0;
+}
+
+h2 {
+    color: hsl(303, 10%, 53%);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -.45px;
+    line-height: 1.7;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+.social-proof-container {
+    max-width: 90vw;
+    width: 77vw;
+    min-width: min-content;
+    margin-top: 135px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    margin-right: 9vw;
+}
+
+@media screen and (max-width: 1163px) {
+    .header-container {
+        margin-right: 20px;
+    }
+}
+
+.rating-container:nth-child(1) { margin-right: 95px; }
+.rating-container:nth-child(2) { margin-right: 45px; }
+.rating-container:nth-child(3) { margin-right: 0px; }
+
+.rating-container { 
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    letter-spacing: -.45px;
+    padding: 20px 30px;
+    margin-top: 15px;
+    max-width: 385px;
+    width: 27vw;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.stars, .rating {
+    display: flex;
+    font-size: 14px;
+    height: min-content;
+}
+
+.stars {
+    margin-right: 25px;
+}
+
+.star {
+    display: inline-block;
+}
+
+.star:not(:last-child) {
+    margin-right: 8px;
+}
+
+.reviews-container {
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.review-container {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: hsl(300, 24%, 96%);
+    font-size: 13px;
+    padding: 40px 32px;
+    height: min-content;
+}
+
+.review-container:not(:last-child) {
+    margin-right: 30px;
+}
+
+.review-container:nth-child(1) { margin-top: 0px; }
+.review-container:nth-child(2) { margin-top: 16px; }
+.review-container:nth-child(3) { margin-top: 32px; }
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image-container img {
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    margin-right: 23px;
+    object-fit: contain;
+}
+
+.profile-details-container {
+    flex: 1 1 auto;
+}
+
+.profile-name {
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 6px;
+}
+
+.verified-buyer {
+    color: hsl(333, 80%, 67%);
+}
+
+.review {
+    font-size: 13px;
+    letter-spacing: -.2px;
+    line-height: 1.75;
+    margin: 30px 0 0 0;
+}
+
+@media screen and (max-width: 1097px) {
+    .review-container {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .social-proof-container {
+        width: 87.5vw;
+        max-width: 87.5vw;
+        margin-bottom: 100px;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+        font-size: 32px;
+    }
+
+    h2 {
+        letter-spacing: -.35px;
+        margin-top: 25px;
+    }
+
+    .header-container {
+        text-align: center;
+        margin-right: auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .rating-container:nth-child(1) {
+        margin-top: 40px;
+    }
+
+    .rating-container {
+        max-width: unset;
+        width: unset;
+        margin-right: auto !important;
+    }
+
+    .reviews-container {
+        margin-top: 50px;
+    }
+
+    .review-container {
+        margin-right: auto !important;
+    }
+
+    .review-container:not(:first-child) {
+        margin-top: 16px !important;
+    }
+
+    .review {
+        letter-spacing: -.15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        background: url(./images/bg-pattern-top-mobile.svg) top left no-repeat, url(./images/bg-pattern-bottom-mobile.svg) bottom right no-repeat, hsl(0, 0%, 100%);
+        min-height: calc(100vh - 85px);
+    }
+
+    h1 {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social-proof-container {
+        margin-top: 85px;
+        margin-bottom: 50px;
+    }
+
+    .rating-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .stars {
+        margin-right: unset;
+        margin-bottom: 15px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 20px 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
