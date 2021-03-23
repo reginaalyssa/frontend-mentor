@@ -1,0 +1,11 @@
+:root {
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --dark-gray-blue: hsl(217, 19%, 35%);
+    --gray-blue: hsl(212, 23%, 69%);
+    --light-gray-blue: hsl(210, 46%, 95%);
+}
+
+body { background-color: var(--light-gray-blue); }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
