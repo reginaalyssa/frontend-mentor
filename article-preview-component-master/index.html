@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">
-  
-  <title>Frontend Mentor | Article preview component</title>
-  <style>
-  </style>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles.css">
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Article preview component</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <article class="article-card">
+        <div class="article-card__image">
+          <img src="./images/drawers.jpg" alt="Article image - furniture" />
+        </div>
+        <div class="article-card__content">
+          <header class="article-card__header">
+            <h2>
+              Shift the overall look and feel by adding these wonderful
+              touches to furniture in your home
+            </h2>
+          </header>
+          <p class="article-card__excerpt">
+            Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips
+            to help you make any room feel complete.
+          </p>
+          <footer class="article-card__footer" role="contentinfo">
+            <div class="article-card__author-avatar">
+              <img src="./images/avatar-michelle.jpg" alt="Michelle Appleton avatar" />
+            </div>
+            <div class="article-card__author-name">Michelle Appleton</div>
+            <div class="article-card__post-date">28 Jun 2020</div>
+            <button class="btn btn--share">
+              <img src="./images/icon-share.svg" />
+            </button>
+            <div class="article-card__share">
+              <span>Share</span>
+              <a href="#" class="article-card__social">
+                <img src="./images/icon-facebook.svg" />
+              </a>
+              <a href="#" class="article-card__social">
+                <img src="./images/icon-twitter.svg" />
+              </a>
+              <a href="#" class="article-card__social">
+                <img src="./images/icon-pinterest.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="http://github.com/reginaalyssa">Regina Alyssa</a>.
+      </div>
+    </div>
+  </body>
 </html>
