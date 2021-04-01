@@ -49,6 +49,12 @@ body {
     color: var(--desaturated-dark-blue);
 }
 
+.article-card__author-avatar img {
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
