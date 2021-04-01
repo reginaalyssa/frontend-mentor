@@ -32,6 +32,14 @@ body {
 }
 
 .article-card__content {
+    padding: 40px;
+}
+
+.article-card__header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark-gray-blue);
 }
 
 .attribution {
