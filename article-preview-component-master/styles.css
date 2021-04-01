@@ -15,18 +15,23 @@ body {
 }
 
 .article-card {
+    align-items: stretch;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    max-width: 730px;
+    border-radius: 10px;
+    width: 730px;
+    background-color: var(--white);
 }
 
-.article-card__image img {
-    width: 285px;
+.article-card__image {
+    border-radius: 10px 0 0 10px;
+    min-width: 285px;
+    background: url(./images/drawers.jpg) top 50% left 50% no-repeat;
+    background-size: cover;
 }
 
 .article-card__content {
-    background-color: var(--white);
 }
 
 .attribution {
