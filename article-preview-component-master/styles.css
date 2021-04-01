@@ -42,6 +42,13 @@ body {
     color: var(--dark-gray-blue);
 }
 
+.article-card__excerpt {
+    line-height: 1.5;
+    font-size: 13px;
+    letter-spacing: .175px;
+    color: var(--desaturated-dark-blue);
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
