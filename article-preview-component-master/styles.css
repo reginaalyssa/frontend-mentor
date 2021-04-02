@@ -109,6 +109,10 @@ body {
     line-height: 0;
 }
 
+.btn--share:hover {
+    cursor: pointer;
+}
+
 .article-card__share {
     position: absolute;
     display: none;
