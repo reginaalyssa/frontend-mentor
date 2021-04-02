@@ -45,6 +45,7 @@ body {
 }
 
 .article-card__excerpt {
+    margin: 20px 0;
     line-height: 1.5;
     letter-spacing: .175px;
     color: var(--desaturated-dark-blue);
