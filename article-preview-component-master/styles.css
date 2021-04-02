@@ -48,20 +48,22 @@ body {
 }
 
 .article-card__header {
-    margin: 40px 0 20px 0;
+    margin: 32px 0 0 0;
 }
 
 .article-card__header h2 {
     margin: 0;
     font-size: 20px;
+    line-height: 1.4;
     font-weight: 700;
+    letter-spacing: 0.25px;
     color: var(--dark-gray-blue);
 }
 
 .article-card__excerpt {
-    margin: 20px 0;
-    line-height: 1.5;
-    letter-spacing: .175px;
+    margin: 12px 0 18px 0;
+    line-height: 1.55;
+    letter-spacing: .125px;
     color: var(--desaturated-dark-blue);
 }
 
@@ -78,22 +80,24 @@ body {
 }
 
 .article-card__author-avatar {
-    margin-right: 15px;
+    margin-right: 17px;
 }
 
 .article-card__author-avatar img {
+    display: block;
     border-radius: 20px;
     height: 40px;
     width: 40px;
 }
 
 .article-card__author-name {
-    line-height: 1.75;
+    line-height: 1.55;
     font-weight: 700;
     color: var(--dark-gray-blue);
 }
 
 .article-card__publish-date {
+    line-height: 1.55;
     color: var(--gray-blue);
 }
 
@@ -102,9 +106,9 @@ body {
 }
 
 .btn--share {
-    border-radius: 16.5px;
+    border-radius: 15.5px;
     height: min-content;
-    padding: 10px 9px;
+    padding: 9px 8px;
     background-color: var(--light-gray-blue);
     line-height: 0;
 }
