@@ -65,9 +65,10 @@ body {
 }
 
 .article-card__footer {
-    margin: 20px 0 30px 0;
+    align-items: center;
     justify-content: space-between;
     display: flex;
+    margin: 20px 0 30px 0;
 }
 
 .article-card__meta {
@@ -93,6 +94,18 @@ body {
 
 .article-card__publish-date {
     color: var(--gray-blue);
+}
+
+.btn {
+    border: none;
+}
+
+.btn--share {
+    border-radius: 16.5px;
+    height: min-content;
+    padding: 10px 9px;
+    background-color: var(--light-gray-blue);
+    line-height: 0;
 }
 
 .article-card__share {
