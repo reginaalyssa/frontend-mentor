@@ -46,15 +46,43 @@ body {
 
 .article-card__excerpt {
     line-height: 1.5;
-    font-size: 13px;
     letter-spacing: .175px;
     color: var(--desaturated-dark-blue);
+}
+
+.article-card__meta {
+    align-items: center;
+    display: flex;
+}
+
+.article-card__footer {
+    justify-content: space-between;
+    display: flex;
+}
+
+.article-card__author-avatar {
+    margin-right: 15px;
 }
 
 .article-card__author-avatar img {
     border-radius: 20px;
     height: 40px;
     width: 40px;
+}
+
+.article-card__author-name {
+    line-height: 1.75;
+    font-weight: 700;
+    color: var(--dark-gray-blue);
+}
+
+.article-card__publish-date {
+    color: var(--gray-blue);
+}
+
+.article-card__share {
+    position: absolute;
+    display: none;
 }
 
 .attribution {
