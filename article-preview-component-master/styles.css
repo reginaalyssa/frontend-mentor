@@ -43,7 +43,11 @@ body {
 }
 
 .article-card__content {
-    padding: 40px;
+    padding: 0 40px;
+}
+
+.article-card__header {
+    margin: 40px 0 20px 0;
 }
 
 .article-card__header h2 {
@@ -60,13 +64,14 @@ body {
     color: var(--desaturated-dark-blue);
 }
 
-.article-card__meta {
-    align-items: center;
+.article-card__footer {
+    margin: 20px 0 30px 0;
+    justify-content: space-between;
     display: flex;
 }
 
-.article-card__footer {
-    justify-content: space-between;
+.article-card__meta {
+    align-items: center;
     display: flex;
 }
 
