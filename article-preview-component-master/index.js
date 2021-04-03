@@ -15,7 +15,6 @@ document.addEventListener('keyup', hideButtonOutline);
 function hideButtonOutline(e) {
   if (e.keyCode == 9) {
 	let shareButtonElement = document.getElementsByClassName("btn--share")[0];
-	console.log(shareButtonElement)
 	shareButtonElement.classList.add("btn--share_with-outline");
 	document.removeEventListener('keyup', hideButtonOutline);
   }
