@@ -193,6 +193,17 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    .content {
+        position: unset;
+        top: unset;
+        bottom: unset;
+        display: block;
+        -ms-transform: unset;
+        -webkit-transform: unset;
+        transform: unset;
+        margin-top: 120px;
+    }
+
     .article-card {
         flex-direction: column;
         max-width: 328px;
@@ -224,11 +235,11 @@ body {
 
     .article-card__footer {
         position: relative;
-        margin: 32px 0 22px 0;
+        margin: 32px 0 18px 0;
     }
 
     .article-card__footer_share-active {
-        margin: 22px 0 22px 0;
+        margin: 28px 0 22px 0;
     }
 
     .article-card__share {
@@ -239,8 +250,8 @@ body {
         bottom: 0;
         margin-bottom: -22px;
         border-radius: 0 0 10px 10px;
-        width: 256px;
-        padding: 22px 36px 22px 36px;
+        width: 260px;
+        padding: 22px 32px 22px 36px;
     }
 
     .article-card__share-popup::after {
