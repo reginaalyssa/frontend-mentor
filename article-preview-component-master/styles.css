@@ -190,7 +190,30 @@ body {
 
     .article-card__image {
         border-radius: 10px 10px 0 0;
-        min-height: 200px;
+        min-height: 202px;
+        background: url(./images/drawers.jpg) top 25% left 0% no-repeat;
+        background-size: cover;
+    }
+
+    .article-card__content {
+        padding: 0 32px;
+    }
+
+    .article-card__header {
+        margin: 36px 0 0 0;
+    }
+
+    .article-card__header h2 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .article-card__excerpt {
+        letter-spacing: 0.15px;
+    }
+
+    .article-card__footer {
+        margin: 32px 0 22px 0;
     }
 }
 
