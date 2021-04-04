@@ -62,7 +62,7 @@ header {
 }
 
 .challenge-card__content {
-	padding: 15px;
+	padding: 30px 15px;
 }
 
 .challenge-card__content h2 {
@@ -73,8 +73,25 @@ header {
 .challenge-card__content__list {
     justify-content: space-evenly;
     display: flex;
+    margin: 30px 0 0 0;
 	padding: 0;
 	list-style: none;
+}
+
+.challenge-card__preview-link {
+	display: inline-block;
+    border-radius: 20px;
+	padding: 10px 30px;
+    background-color: rgb(62, 84, 163);
+    color: white;
+}
+
+.challenge-card__github-link {
+	display: inline-block;
+    border: 2px solid rgb(106, 190, 205);
+    border-radius: 20px;
+	padding: 10px 30px;
+    color: rgb(106, 190, 205);
 }
 
 .attribution {
