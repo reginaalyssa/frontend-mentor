@@ -1,12 +1,15 @@
-console.log("yay");
-
 let shareButtons = document.getElementsByClassName("btn--share");
 
 function toggleShareContainer(e) {
-	console.log("YO");
-	shareButtonElement = e.target.closest(".btn--share");
-	shareButtonElement.classList.toggle("btn--share_active");
+	let articleCardShareElement = e.target.closest(".article-card__share");
+	let mainShareButtonElement = articleCardShareElement.getElementsByClassName("btn--share_main")[0];
+	if (mainShareButtonElement.classList.contains("btn--share_active")) {
+		mainShareButtonElement.classList.remove("btn--share_active");
+	} else {
+		mainShareButtonElement.classList.add("btn--share_active");
+	}
 	
+	let shareButtonElement = e.target.closest(".btn--share");
 	let sharePopup = shareButtonElement.nextElementSibling;
 	if (sharePopup == null) { sharePopup = shareButtonElement.closest(".article-card__share-popup"); }
 	sharePopup.classList.toggle("article-card__share-popup_visible");
