@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+
+:root {
+    --heading-font-family: 'Lora';
+    --base-font-family: 'Karla';
+    --base-font-size: 16px;
+}
+
+body {
+	font-size: var(--base-font-size);
+	font-family: var(--base-font-family);
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: var(--heading-font-family);
+}
