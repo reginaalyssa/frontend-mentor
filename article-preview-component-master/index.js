@@ -18,12 +18,6 @@ function toggleShareContainer(e) {
 	footer.classList.toggle("article-card__footer_share-active");
 }
 
-for (var i = 0; i < shareButtons.length; i++) {
-	shareButtons[i].addEventListener("click", toggleShareContainer);
-}
-
-document.addEventListener("keyup", hideButtonOutline);
-
 function hideButtonOutline(e) {
   if (e.keyCode == 9) {
 	let shareButtons = document.getElementsByClassName("btn--share");
@@ -33,3 +27,9 @@ function hideButtonOutline(e) {
 	document.removeEventListener("keyup", hideButtonOutline);
   }
 }
+
+for (var i = 0; i < shareButtons.length; i++) {
+	shareButtons[i].addEventListener("click", toggleShareContainer);
+}
+
+document.addEventListener("keyup", hideButtonOutline);
