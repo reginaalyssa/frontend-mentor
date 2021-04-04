@@ -145,7 +145,9 @@ body {
     position: absolute;
     left: 50%;
     visibility: hidden;
+    opacity: 0;
     transform: translate(-50%, 0);
+    transition: all 0.25s ease-in-out;
     margin-top: -115px;
     border-radius: 10px;
     padding: 17.5px 36px;
@@ -178,6 +180,7 @@ body {
 
 .article-card__share-popup_visible {
     visibility: visible;
+    opacity: 1;
 }
 
 .article-card__social {
@@ -247,6 +250,7 @@ body {
     }
 
     .article-card__share-popup {
+        transition: none;
         bottom: 0;
         margin-bottom: -22px;
         border-radius: 0 0 10px 10px;
