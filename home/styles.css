@@ -1,19 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
 
 :root {
     --heading-font-family: 'Lora';
     --base-font-family: 'Karla';
     --base-font-size: 16px;
+    --background-color: ;
+    --white: hsl(0, 100%, 100%);
+    --red: hsl(351, 84.3%, 55.1%);
+    --blue: hsl(227, 44.9%, 44.1%);
 }
 
 body {
 	font-size: var(--base-font-size);
 	font-family: var(--base-font-family);
+	background-color: var(--background-color);
 }
 
 h1, h2, h3, h4, h5 {
 	font-family: var(--heading-font-family);
+}
+
+a {
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--blue);
+}
+
+header {
+	margin: 30px 0 60px 0;
+	text-align: center;
 }
 
 .header__heading h1 {
@@ -23,4 +39,33 @@ h1, h2, h3, h4, h5 {
 
 .header__description {
 	margin-top: 0;
+}
+
+.challenge-card {
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+    border-radius: 10px;
+	width: 33%;
+    background-color: var(--white);
+}
+
+.challenge-card__image img {
+	display: block;
+	border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.challenge-card__content {
+	padding: 15px;
+}
+
+.challenge-card__content h2 {
+	margin: 0;
+	text-align: center;
+}
+
+.challenge-card__content__list {
+    justify-content: space-evenly;
+    display: flex;
+	padding: 0;
+	list-style: none;
 }
