@@ -9,12 +9,12 @@ function toggleShareContainer(e) {
 		mainShareButtonElement.classList.add("btn--share_active");
 	}
 	
-	let shareButtonElement = e.target.closest(".btn--share");
-	let sharePopup = shareButtonElement.nextElementSibling;
-	if (sharePopup == null) { sharePopup = shareButtonElement.closest(".article-card__share-popup"); }
+	let clickedShareButtonElement = e.target.closest(".btn--share");
+	let sharePopup = clickedShareButtonElement.nextElementSibling;
+	if (sharePopup == null) { sharePopup = clickedShareButtonElement.closest(".article-card__share-popup"); }
 	sharePopup.classList.toggle("article-card__share-popup_visible");
 
-	let footer = shareButtonElement.closest(".article-card__footer");
+	let footer = clickedShareButtonElement.closest(".article-card__footer");
 	footer.classList.toggle("article-card__footer_share-active");
 }
 
