@@ -51,6 +51,7 @@ header {
     margin: 30px 15px;
     box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
     border-radius: 10px;
+    min-width: 300px;
     width: 33%;
     background-color: var(--white);
 }
