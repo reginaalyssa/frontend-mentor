@@ -61,8 +61,8 @@ body {
 
 .btn {
     border: none;
-    border-radius: 30px;
-    padding: 15px 30px;
+    border-radius: 32px;
+    padding: 15px 32px;
     background-color: var(--light-gray);
     font-size: var(--base-font-size);
     font-family: var(--base-font-family), sans-serif;
