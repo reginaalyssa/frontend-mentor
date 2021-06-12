@@ -18,6 +18,32 @@ body {
     font-family: var(--base-font-family), sans-serif;
 }
 
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+    transform: translate(-50%, -50%);
+    margin-right: auto;
+    margin-left: auto;
+    width: 920px;
+    max-width: 90vw;
+}
+
+.card {
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
 .attribution {
     margin: 20px 0;
     font-size: 11px;
