@@ -60,12 +60,19 @@ body {
 }
 
 .btn {
-    border: none;
-    border-radius: 32px;
-    padding: 15px 32px;
+    border: 2px solid transparent;
+    border-radius: 28px;
+    padding: 15px 28px;
     background-color: var(--light-gray);
     font-size: var(--base-font-size);
     font-family: var(--base-font-family), sans-serif;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 2px solid var(--light-gray);
+    background-color: transparent;
+    color: var(--light-gray) !important;
 }
 
 #sedans-column {
