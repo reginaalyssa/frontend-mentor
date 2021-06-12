@@ -32,8 +32,8 @@ body {
 }
 
 .card {
-	border-radius: 10px;
-	overflow: hidden;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .row {
@@ -43,19 +43,29 @@ body {
 .column {
     flex: 1;
     padding: 45px;
+}
+
+.column__title {
+    font-size: 36px;
+    font-family: var(--title-font-family);
+    text-transform: uppercase;
+    color: var(--light-gray);
+}
+
+.column__description {
     color: var(--transparent-white);
 }
 
 #sedans-column {
-	background-color: var(--bright-orange);
+    background-color: var(--bright-orange);
 }
 
 #suvs-column {
-	background-color: var(--cyan);
+    background-color: var(--cyan);
 }
 
 #luxury-column {
-	background-color: var(--dark-cyan);
+    background-color: var(--dark-cyan);
 }
 
 .attribution {
