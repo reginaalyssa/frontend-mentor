@@ -99,6 +99,28 @@ body {
     color: var(--dark-cyan);
 }
 
+@media screen and (max-width: 810px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .container {
+        position: initial;
+        top: initial;
+        left: initial;
+        -ms-transform: none;
+        -webkit-transform: none;
+        transform: none;
+        margin-top: 88px;
+        margin-bottom: 88px;
+        max-width: 87vw;
+    }
+
+    .column__description {
+        margin-bottom: 30px;
+    }
+}
+
 .attribution {
     margin: 20px 0;
     font-size: 11px;
