@@ -2,6 +2,8 @@
 
 ![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)
 
+Live Site Link: https://frontend-mentor-reginaalyssa.vercel.app/3-column-preview-card-component-main/index.html
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
