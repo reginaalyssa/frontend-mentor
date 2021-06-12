@@ -42,6 +42,20 @@ body {
 
 .column {
     flex: 1;
+    padding: 45px;
+    color: var(--transparent-white);
+}
+
+#sedans-column {
+	background-color: var(--bright-orange);
+}
+
+#suvs-column {
+	background-color: var(--cyan);
+}
+
+#luxury-column {
+	background-color: var(--dark-cyan);
 }
 
 .attribution {
