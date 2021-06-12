@@ -2,7 +2,7 @@
 
 ![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
 
-Live Site Link: https://frontend-mentor-social-proof-reginaalyssa.vercel.app/
+Live Site Link: https://frontend-mentor-reginaalyssa.vercel.app/social-proof-section-master/index.html
 
 ## Welcome! 👋
 

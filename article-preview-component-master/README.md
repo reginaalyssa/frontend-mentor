@@ -2,6 +2,8 @@
 
 ![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
 
+Live Site Link: https://frontend-mentor-reginaalyssa.vercel.app/article-preview-component-master/index.html
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.

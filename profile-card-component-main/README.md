@@ -2,7 +2,7 @@
 
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
 
-Live Site Link: https://frontend-mentor-profile-card-reginaalyssa.vercel.app/
+Live Site Link: https://frontend-mentor-reginaalyssa.vercel.app/profile-card-component-main/index.html
 
 ## Welcome! 👋
 

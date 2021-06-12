@@ -2,7 +2,7 @@
 
 ![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)
 
-Live Site Link: https://frontend-mentor-faq-accordion-reginaalyssa.vercel.app/
+Live Site Link: https://frontend-mentor-reginaalyssa.vercel.app/faq-accordion-card-main/index.html
 
 ## Welcome! 👋
 
